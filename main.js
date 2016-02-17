@@ -8,6 +8,9 @@ module.exports = {
     } else if (amount > 20 && amount <= 30) {
       var taxAt5 = amount - 20;
       return (taxAt5 * 0.05) + 1.7;
+    } else if (amount > 30) {
+      var taxAt3 = amount - 30;
+      return +((taxAt3 * 0.03) + 2.2).toFixed(2);
     }
   }
 };

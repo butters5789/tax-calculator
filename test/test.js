@@ -16,4 +16,8 @@ describe('Tax Calculator', function(){
     expect(code.calcTax(27)).to.equal(2.05);
   });
 
+  it('should tax 3% on the rest', function(){
+    expect(code.calcTax(56)).to.equal(2.98);
+  });
+
 });
