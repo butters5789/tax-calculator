@@ -12,4 +12,8 @@ describe('Tax Calculator', function(){
     expect(code.calcTax(15)).to.equal(1.35);
   });
 
+  it('should tax 5% on the third $10', function(){
+    expect(code.calcTax(27)).to.equal(2.05);
+  });
+
 });
