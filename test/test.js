@@ -1,6 +1,11 @@
 var code = require('../main');
 var expect = require('chai').expect;
 
-describe('', function() {
-  it('');
+describe('Tax Calculator', function(){
+
+  it('should tax 10% on the first $10', function() {
+    expect(code.calcTax(1)).to.equal(0.1);
+    expect(code.calcTax(10)).to.equal(1);
+  });
+
 });
